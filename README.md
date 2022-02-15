@@ -14,4 +14,4 @@ Some data about the model and trainig process is provided in the trainInfoStruct
 You can simply load the **trainedNetwork_1.mat** file and test it. A sample script is provided in **test.m**.
 
 <br></br>
-### More details are provided in [this document](https://github.com/MJSahebnasi/Deep-Gender-Detector-for-Audio/raw/main/Report.pdf) (written in Persian) ###
+### More details are provided in [this document](https://github.com/MJSahebnasi/Deep-Gender-Detector-for-Audio/raw/main/Report.pdf). (written in Persian) ###
