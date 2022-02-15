@@ -10,6 +10,8 @@ Due to our dataset's comparativly small size, we decided to use Transfer Learnin
 Finally we saved our trained model as **trainedNetwork_1.mat** file.
 Some data about the model and trainig process is provided in the trainInfoStruct_1.mat file.
 
+![train stats](docs/train_stats.PNG)
+
 ## Test
 You can simply load the **trainedNetwork_1.mat** file and test it. A sample script is provided in **test.m**.
 
