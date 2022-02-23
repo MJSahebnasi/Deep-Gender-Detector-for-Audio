@@ -1,6 +1,4 @@
 fs = 16000;%16khz
-%duration = 0.5;
-%N = duration*fs;
 cd
 D = 'C:\Users\Parisa\Desktop\AzMATLABPro\MainDataChangeToWAV';
 cd C:\Users\Parisa\Desktop\AzMATLABPro\MainDataChangeToWAV
@@ -11,11 +9,12 @@ filelist = filelist(~[filelist.isdir]);
 num_of_files=length(filelist);
 
 data=strings(3425,2);
-label=strings(3425,1);
+label=strings(1001,1);
 %[y,fs]=audioread("C:\Users\Parisa\Desktop\AzMATLABPro\MainDataChangeToWAV\1_female\Target\1_f_target_1.wav");
 %a=size(y);
 %a(2)
-for i=1:num_of_files
+num_of_used_files=1001
+for i=1:num_of_used_files
     
     temp=strcat(filelist(i).folder,"\");
     data(i,1)=strcat(temp,filelist(i).name);
@@ -42,12 +41,13 @@ for i=1:num_of_files
     end
     
     %make audios into same size by padding zero
-    %177152 is the size for a audio that is around 3 seconds
-    %70000 ta hodood 4 second
+    %177152 is the size for an audio that is around 3 seconds but we did not
+    %use this
+    %70000 till about 4 second
     pad=70000-col(1);
     if pad>0
        y_new =[y;zeros(pad,1)];
-      % y_new(177152*ceil(end/177152)) = 0; %i do not know
+      
       
         
     end
